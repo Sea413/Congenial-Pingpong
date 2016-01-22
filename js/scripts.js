@@ -1,20 +1,14 @@
-function myFunction() {
-    var elmnt = document.createElement("li");
-    var textnode = document.createTextNode("Water");
-    elmnt.appendChild(textnode);
-
-    var item = document.getElementById("myList");
-    item.replaceChild(elmnt, item.childNodes[2]);
-}
-
-
 $(document).ready(function() {
 $("form#question").submit(function(event) {
 
 var gabe = parseInt($("input#gaben").val());
 var appendText = [];
 for (var i = 1; i <= gabe; i++) {
-$("#sth").prepend( i + "<li>" );
+$("#sth").append( i + "<br>" );
+}
+if (i % 3 === 0) {
+// $("#sth").createTextNode( "Ping" );
+
 }
 // function myFunction() {
 //     var elmnt = document.createElement("li");
@@ -24,6 +18,15 @@ $("#sth").prepend( i + "<li>" );
 //     var item = document.getElementById("myList");
 //     item.replaceChild(elmnt, item.childNodes[0]);
 // }
+var elmnt = document.createElement("li");
+// var tiger = document.createTextNode("Ping");
+// elmnt.appendChild(tiger);
+
+var item = document.getElementById("sth");
+item.replaceChild(elmnt, item.childNodes[2]);
+$('li').each(function() {
+  $(this).before($('<span>').text("Ping"));
+});
 
 // if (i % 3 === 0) {
 //       var tyrion = document.createElement("li");
