@@ -1,11 +1,12 @@
-describe('pigLatin', function() {
-  it("is false for a consonant to be at the start of a word", function() {
-    expect(pigLatin("tree")).to.equal(false);
+describe('dogwhistle', function() {
+  it("Buzz lightyear is cool." function() {
+    expect(dogwhistle(3)).to.equal(true);
   });
+  });
+  // it("is true for years divisible by 4", function() {
+  //   expect(dogwhistle(2004)).to.equal(true);
+  // });
 
-  it("is true for words starting with a vowel to end in ay", function() {
-    expect(pigLatin('appleay')).to.equal(true);
-  });
  //  it("is false for years divisible by 100", function() {
  //    expect(leapYear(1900)).to.equal(false);
  //  });
@@ -13,4 +14,3 @@ describe('pigLatin', function() {
  // it("is true for years divisible by 400", function() {
  //    expect(leapYear(2000)).to.equal(true);
  //  });
-});
