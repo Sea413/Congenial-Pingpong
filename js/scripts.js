@@ -1,6 +1,6 @@
 var dogwhistle = function(gabe){
-var i = 3
-return ((i % 3 == 0) || (i % 5 == 0)) || (i % 15 == 0);
+  // var gabe = 3
+return ((gabe % 3 == 0) || (gabe % 5 == 0)) || (gabe % 15 == 0);
 };
 
 $(document).ready(function() {
@@ -11,7 +11,6 @@ var appendText = [];
 for (var i = 1; i <= gabe; i++) {
 appendText.push(i);
 }
-//
 for (var i = 1; i <= appendText.length; i++) {
 if (i % 3 ===0) {
   appendText[i-1]= "Ping";
