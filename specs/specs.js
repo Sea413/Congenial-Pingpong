@@ -19,8 +19,5 @@ describe('emu', function() {
     it("is true when array is formulated it will result in a state when a non integar will occupy 3n, 5n, and 15n in their respective postions.", function() {
         expect([1, 2, "Ping"]).to.eql([1, 2, "Ping"]);
       });
-      it("is designed to generate experimental results", function() {
-          expect(cloneArray[2]).to.eql([1, 2]);
-        });
   });
 });
