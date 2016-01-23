@@ -3,9 +3,10 @@ var dogwhistle = function(gabe){
 return ((gabe % 3 == 0) || (gabe % 5 == 0)) || (gabe % 15 == 0);
 };
 var emu = function(cloneArray){
-var cloneArray = appendText.slice()
+var cloneArray = appendText.slice(1,2)
 return
 };
+
 $(document).ready(function() {
 $("form#question").submit(function(event) {
 
