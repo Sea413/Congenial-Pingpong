@@ -13,11 +13,11 @@ describe('dogwhistle', function() {
 
   it("is true the wu tang clan has always been good", function() {
       expect(dogwhistle(5)).to.equal(true);
-    });
+  });
 
 describe('emu', function() {
-    it("is true when array is formulated it will result in a state when a non integar will occupy 3n, 5n, and 15n in their respective postions.", function() {
+  it("is true when array is formulated it will result in a state when a non integar will occupy 3n, 5n, and 15n in their respective postions.", function() {
         expect([1, 2, "Ping"]).to.eql([1, 2, "Ping"]);
-      });
+  });
   });
 });
