@@ -2,7 +2,10 @@ var dogwhistle = function(gabe){
   // var gabe = 3
 return ((gabe % 3 == 0) || (gabe % 5 == 0)) || (gabe % 15 == 0);
 };
-
+var emu = function(cloneArray){
+var cloneArray = appendText.slice()
+return
+};
 $(document).ready(function() {
 $("form#question").submit(function(event) {
 
@@ -22,7 +25,7 @@ if (i % 15 ===0) {
   appendText[i-1]= "PingPong";
 }
 }
-$("#sth").append(appendText + "<br>" );
+$("#sth").html(appendText + "<br>" );
 event.preventDefault();
 });
 });
