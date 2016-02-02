@@ -1,32 +1,33 @@
-var dogwhistle = function(gabe){
-  // var gabe = 3
-return ((gabe % 3 == 0) || (gabe % 5 == 0)) || (gabe % 15 == 0);
-};
-var emu = function(cloneArray){
-var cloneArray = appendText.slice()
-return
-};
-
-$(document).ready(function() {
-$("form#question").submit(function(event) {
-
-var gabe = parseInt($("input#gaben").val());
-var appendText = [];
-for (var i = 1; i <= gabe; i++) {
-appendText.push(i);
+function Pingpong (test,appendText){
+this.test = 0;
+this.appendText = [];
 }
-for (var i = 1; i <= appendText.length; i++) {
+
+Pingpong.prototype.intselect = function(valueinteger){
+for (var i = 1; i <= valueinteger; i++) {
+this.appendText.push(i);
+}
+for (var i = 1; i <= this.appendText.length; i++) {
 if (i % 3 ===0) {
-  appendText[i-1]= "Ping";
+  this.appendText[i-1]= "Ping";
 }
 if (i % 5 ===0) {
-  appendText[i-1]= "Pong";
+  this.appendText[i-1]= "Pong";
+
 }
 if (i % 15 ===0) {
-  appendText[i-1]= "PingPong";
+  this.appendText[i-1]= "PingPong";
+}
+return this.appendText;
 }
 }
-$("#sth").html(appendText + "<br>" );
+$(document).ready(function() {
+$("form#question").submit(function(event) {
+var valueinteger = parseInt($("input#gaben").val());
+var sequence = new Pingpong();
+sequence.intselect(valueinteger);
+
+$("#sth").html(sequence.appendText + "<br>" );
 event.preventDefault();
 });
 });
