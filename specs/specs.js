@@ -1,7 +1,7 @@
 describe('Pingpong', function() {
-    it("will begin create parameters for the array set.", function(){
-      var testObject = new Pingpong ();
-      expect(testObject.appendText).to.eql([]);
+  it("will begin create parameters for the array set.", function(){
+    var testObject = new Pingpong ();
+    expect(testObject.appendText).to.eql([]);
   });
   it("will allow expansion.", function(){
     var testObject = new Pingpong (3);
